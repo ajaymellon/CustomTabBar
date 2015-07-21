@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
-@interface ViewController ()
+
+@interface ViewController ()<GetButtonListnerDelegate>
+@property (weak, nonatomic) IBOutlet TabBarMenu *myView;
 
 @end
 
@@ -16,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.myView.delegate = self;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -23,5 +27,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)tabMenuView:(TabBarMenu *)tabBarMenu buttonTapped:(NSString *)buttonName{
+    NSLog(@"Button Name = %@",buttonName);
+    
+    if ([buttonName isEqualToString:@"B 1"]) {
+          UIStoryboard *myStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        SecondViewController *secondViewControllerObj = [myStoryboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
+        [self.navigationController showViewController:secondViewControllerObj sender:nil];
+    }
+  
 
+}
 @end

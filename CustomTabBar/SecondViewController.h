@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  CustomTabBar
 //
 //  Created by Ajay Jha on 21/07/15.
@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TabBarMenu.h"
 
-@interface ViewController : UIViewController
 
+@interface SecondViewController : UIViewController
 
 @end
-

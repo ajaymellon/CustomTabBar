@@ -14,6 +14,8 @@
 		B39C46231B5E121300AF4945 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39C46221B5E121300AF4945 /* Images.xcassets */; };
 		B39C46261B5E121300AF4945 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39C46241B5E121300AF4945 /* LaunchScreen.xib */; };
 		B39C46321B5E121300AF4945 /* CustomTabBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B39C46311B5E121300AF4945 /* CustomTabBarTests.m */; };
+		B39C463D1B5E147E00AF4945 /* TabBarMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B39C463C1B5E147E00AF4945 /* TabBarMenu.m */; };
+		B39C46401B5E22B900AF4945 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39C463F1B5E22B900AF4945 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		B39C462B1B5E121300AF4945 /* CustomTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39C46301B5E121300AF4945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B39C46311B5E121300AF4945 /* CustomTabBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarTests.m; sourceTree = "<group>"; };
+		B39C463B1B5E147E00AF4945 /* TabBarMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarMenu.h; sourceTree = "<group>"; };
+		B39C463C1B5E147E00AF4945 /* TabBarMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarMenu.m; sourceTree = "<group>"; };
+		B39C463E1B5E22B900AF4945 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B39C463F1B5E22B900AF4945 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,13 @@
 		B39C46141B5E121300AF4945 /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				B39C46411B5E22DF00AF4945 /* MenuView */,
 				B39C46191B5E121300AF4945 /* AppDelegate.h */,
 				B39C461A1B5E121300AF4945 /* AppDelegate.m */,
 				B39C461C1B5E121300AF4945 /* ViewController.h */,
 				B39C461D1B5E121300AF4945 /* ViewController.m */,
+				B39C463E1B5E22B900AF4945 /* SecondViewController.h */,
+				B39C463F1B5E22B900AF4945 /* SecondViewController.m */,
 				B39C461F1B5E121300AF4945 /* Main.storyboard */,
 				B39C46221B5E121300AF4945 /* Images.xcassets */,
 				B39C46241B5E121300AF4945 /* LaunchScreen.xib */,
@@ -117,6 +126,15 @@
 				B39C46301B5E121300AF4945 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B39C46411B5E22DF00AF4945 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				B39C463B1B5E147E00AF4945 /* TabBarMenu.h */,
+				B39C463C1B5E147E00AF4945 /* TabBarMenu.m */,
+			);
+			name = MenuView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39C46401B5E22B900AF4945 /* SecondViewController.m in Sources */,
+				B39C463D1B5E147E00AF4945 /* TabBarMenu.m in Sources */,
 				B39C461E1B5E121300AF4945 /* ViewController.m in Sources */,
 				B39C461B1B5E121300AF4945 /* AppDelegate.m in Sources */,
 				B39C46181B5E121300AF4945 /* main.m in Sources */,
@@ -416,6 +436,7 @@
 				B39C46371B5E121300AF4945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B39C46381B5E121300AF4945 /* Build configuration list for PBXNativeTarget "CustomTabBarTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +445,7 @@
 				B39C463A1B5E121300AF4945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
